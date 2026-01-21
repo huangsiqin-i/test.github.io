@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>体验地图 - 邦典藏族文化</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    .marker { animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- 导航栏 - 当前页面高亮 【LOGO点击返回主页】 -->
+  <header class="fixed w-full z-50 py-4 px-5 md:px-8 bg-white shadow-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-2 text-slate-800">
+        <i class="fa fa-paint-brush text-2xl text-indigo-800"></i>
+        <span class="font-bold text-xl">邦典</span>
+      </a>
+      <nav class="flex gap-6 text-base">
+        <a href="decode.html" class="text-slate-600 hover:text-indigo-800 transition-colors duration-300">文化解码</a>
+        <a href="experience.html" class="text-slate-600 hover:text-indigo-800 transition-colors duration-300">沉浸式体验</a>
+        <a href="map.html" class="text-indigo-800 font-medium border-b-2 border-indigo-800 pb-1">体验地图</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 体验地图完整内容 -->
+  <section class="w-full min-h-screen pt-24 pb-16 px-5 md:px-8">
+    <div class="container mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-[clamp(1.8rem,5vw,2.6rem)] font-bold text-indigo-800 mb-3">邦典 · 西藏非遗深度体验地图</h2>
+        <p class="text-slate-600 text-lg">探访百年工坊，亲身感受邦典传统手工技艺的魅力</p>
+        <div class="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8 items-center justify-center">
+        <div class="w-full lg:w-1/2 rounded-xl overflow-hidden shadow-xl relative h-[480px]">
+          <img src="luxian.jpg" alt="西藏非遗体验地图" class="w-full h-full object-cover">
+          <div class="absolute top-[30%] left-[25%] marker">
+            <div class="w-6 h-6 bg-rose-800 rounded-full border-2 border-white"></div>
+            <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded-lg shadow-md text-xs font-medium text-rose-800">拉萨·雪域工坊</div>
+          </div>
+          <div class="absolute bottom-[35%] right-[20%] marker">
+            <div class="w-6 h-6 bg-indigo-800 rounded-full border-2 border-white"></div>
+            <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded-lg shadow-md text-xs font-medium text-indigo-800">日喀则·巧手工坊</div>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-1/2 flex flex-col gap-6 mt-6 lg:mt-0">
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <h3 class="text-xl font-bold text-indigo-800 mb-3 flex items-center">
+              <i class="fa fa-map-marker text-rose-800 mr-2"></i> 雪域邦典工坊
+            </h3>
+            <p class="text-slate-600 mb-4 text-sm">
+              坐落于拉萨八廓街百年老巷，拥有120年邦典制作历史，传承最纯正的藏族传统编织技艺，坚守天然染料与手工编织，是拉萨最具代表性的邦典非遗工坊。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">1小时编织体验</span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">天然染色工艺展示</span>
+              <span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">非遗匠人面对面</span>
+            </div>
+            <div class="text-slate-700 text-sm space-y-2">
+              <p><i class="fa fa-location-arrow mr-2 text-slate-500"></i> 地址：拉萨市城关区八廓街108号</p>
+              <p><i class="fa fa-clock-o mr-2 text-slate-500"></i> 开放时间：9:00 - 18:00（全年无休）</p>
+            </div>
+            <a href="#" class="inline-block mt-4 px-5 py-2 bg-indigo-800 text-white rounded-lg text-sm font-semibold hover:bg-indigo-700 transition-colors">立即预约体验</a>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-lg">
+            <h3 class="text-xl font-bold text-rose-800 mb-3 flex items-center">
+              <i class="fa fa-map-marker text-rose-800 mr-2"></i> 高原巧手非遗工坊
+            </h3>
+            <p class="text-slate-600 mb-4 text-sm">
+              位于日喀则桑珠孜区，专注于邦典创新设计，将传统纹样与现代审美结合，既保留古法工艺，又融入当代设计理念，深受年轻群体喜爱。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-rose-100 text-rose-800 text-xs rounded-full">邦典设计课程</span>
+              <span class="px-3 py-1 bg-rose-100 text-rose-800 text-xs rounded-full">全天沉浸式体验</span>
+              <span class="px-3 py-1 bg-rose-100 text-rose-800 text-xs rounded-full">文创产品定制</span>
+            </div>
+            <div class="text-slate-700 text-sm space-y-2">
+              <p><i class="fa fa-location-arrow mr-2 text-slate-500"></i> 地址：日喀则市桑珠孜区珠峰路56号</p>
+              <p><i class="fa fa-clock-o mr-2 text-slate-500"></i> 开放时间：9:30 - 19:00（全年无休）</p>
+            </div>
+            <a href="#" class="inline-block mt-4 px-5 py-2 bg-rose-800 text-white rounded-lg text-sm font-semibold hover:bg-rose-700 transition-colors">立即预约体验</a>
+          </div>
+        </div>
+      </div>
+      <!-- 底部返回主页按钮 -->
+      <div class="text-center mt-12">
+        <a href="index.html" class="px-8 py-3 bg-indigo-800 text-white rounded-full font-semibold hover:bg-indigo-700 transition-colors duration-300 inline-flex items-center gap-2">
+          <i class="fa fa-home"></i> 返回主页
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

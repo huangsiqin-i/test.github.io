@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沉浸式体验 - 邦典藏族文化</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    .card-hover { transition: all 0.4s ease; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- 导航栏 - 当前页面高亮 【LOGO点击返回主页】 -->
+  <header class="fixed w-full z-50 py-4 px-5 md:px-8 bg-white shadow-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-2 text-slate-800">
+        <i class="fa fa-paint-brush text-2xl text-indigo-800"></i>
+        <span class="font-bold text-xl">邦典</span>
+      </a>
+      <nav class="flex gap-6 text-base">
+        <a href="decode.html" class="text-slate-600 hover:text-indigo-800 transition-colors duration-300">文化解码</a>
+        <a href="experience.html" class="text-indigo-800 font-medium border-b-2 border-indigo-800 pb-1">沉浸式体验</a>
+        <a href="map.html" class="text-slate-600 hover:text-indigo-800 transition-colors duration-300">体验地图</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 沉浸式体验完整内容 -->
+  <section class="w-full min-h-screen pt-24 pb-16 px-5 md:px-8">
+    <div class="container mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-[clamp(1.8rem,5vw,2.6rem)] font-bold text-indigo-800 mb-3">邦典 · 沉浸式体验设计</h2>
+        <p class="text-slate-600 text-lg">从文化认知到亲手创造，赋予邦典属于你的生命故事</p>
+        <div class="w-20 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl overflow-hidden shadow-xl card-hover">
+          <div class="h-64 overflow-hidden">
+            <img src="tiyan2.jpg" alt="邦典设计工坊" class="w-full h-full object-cover">
+          </div>
+          <div class="p-7">
+            <h3 class="text-xl font-bold text-indigo-800 mb-4">我的邦典 · 专属设计工坊</h3>
+            <p class="text-slate-600 mb-5 text-sm leading-relaxed">
+              基于文化解码的认知，亲手设计属于你的数字邦典。自由搭配传统色彩，创作专属纹样，撰写你的生命宣言，让邦典成为你的身份表达。
+            </p>
+            <ul class="space-y-2 mb-6 text-slate-700">
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 6大藏族经典色系自由搭配</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 12种传统纹样随心组合</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 撰写个人化设计宣言</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 生成高清数字作品可分享</li>
+            </ul>
+            <a href="#" class="inline-block w-full text-center px-6 py-3 bg-indigo-800 text-white rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-300">
+              开启设计之旅 <i class="fa fa-magic ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl overflow-hidden shadow-xl card-hover">
+          <div class="h-64 overflow-hidden">
+            <img src="tiyan1.jpg" alt="人生纹样游戏" class="w-full h-full object-cover">
+          </div>
+          <div class="p-7">
+            <h3 class="text-xl font-bold text-rose-800 mb-4">编织人生 · 互动叙事游戏</h3>
+            <p class="text-slate-600 mb-5 text-sm leading-relaxed">
+              沉浸式体验藏族女孩的成长历程，从少女到成年，每一次人生选择都会改变邦典的纹样与色彩，感受邦典与生命的紧密联结。
+            </p>
+            <ul class="space-y-2 mb-6 text-slate-700">
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 5个关键人生成长阶段体验</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 了解邦典完整制作工艺</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 选择决定纹样的最终形态</li>
+              <li class="flex items-center"><i class="fa fa-check text-emerald-600 mr-2"></i> 解锁邦典背后的文化故事</li>
+            </ul>
+            <a href="#" class="inline-block w-full text-center px-6 py-3 bg-rose-800 text-white rounded-lg font-semibold hover:bg-rose-700 transition-colors duration-300">
+              开始互动体验 <i class="fa fa-gamepad ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 底部返回主页按钮 -->
+      <div class="text-center mt-12">
+        <a href="index.html" class="px-8 py-3 bg-indigo-800 text-white rounded-full font-semibold hover:bg-indigo-700 transition-colors duration-300 inline-flex items-center gap-2">
+          <i class="fa fa-home"></i> 返回主页
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
